@@ -1,0 +1,6 @@
+<h1><%= @book.name %></h1>
+<%= @book.content %>
+<p>
+  <%= link_to "Edit", edit_book_path(@book) %> |
+  <%= link_to "Browse Books", books_path %>
+</p>
