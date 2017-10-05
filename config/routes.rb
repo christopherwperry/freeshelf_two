@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
 
-  get 'sessions/new'
-
   resources :users
   resources :books
   resources :sessions
 
   root to: 'books#index'
+
+  get 'sessions/new'
 
   get 'books/index'
 
